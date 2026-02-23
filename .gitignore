@@ -1,0 +1,23 @@
+# Excel files (can be large)
+*.xlsx
+*.xlsm
+*.xls
+
+# Power BI files
+*.pbix
+
+# Temporary files
+~$*
+*.tmp
+
+# Database files
+*.db
+*.sqlite
+*.mdb
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
