@@ -1,9 +1,17 @@
-# Sales Database Analysis
+# Sales Database Analysis with SQL
+
+## Query Preview
+
+![SQL Query Results](https://i.imgur.com/WoAFWRT.png)
+
+> **Project:** Sales Database built with SQL showcasing schema design, complex JOINs, CTEs, window functions, and business analytics queries.
 
 ## Overview
+
 This project demonstrates database design and SQL query skills using a sales database scenario.
 
 ## Database Schema
+
 The database consists of 4 main tables:
 - **Customers**: Customer information
 - **Products**: Product catalog
@@ -11,30 +19,52 @@ The database consists of 4 main tables:
 - **OrderDetails**: Individual order line items
 
 ## Files
+
 - `schema.sql`: Database schema creation script
-- `queries.sql`: Sample analytical queries
-- `sample_data.sql`: Sample data for testing (to be added)
+- `analytics_queries.sql`: Business analytics queries
+- `sample_data.sql`: Sample data insertion
 
-## Key SQL Skills Demonstrated
-- Database normalization (3NF)
-- Complex JOIN operations
-- Aggregate functions
-- Window functions
+## Skills Demonstrated
+
+### Query Writing
+- Complex JOINs (INNER, LEFT, RIGHT, FULL OUTER)
+- Subqueries and Correlated Subqueries
 - Common Table Expressions (CTEs)
-- Subqueries
-- Date/Time functions
-- CASE statements
-- Index creation for optimization
+- Window Functions (ROW_NUMBER, RANK, LAG, LEAD)
+- Aggregate Functions (SUM, COUNT, AVG, MAX, MIN)
 
-## Sample Analyses
-1. Customer purchase behavior analysis
-2. Monthly sales trends
-3. Product performance metrics
-4. RFM customer segmentation
-5. Inventory management alerts
+### Database Design
+- Normalized schema (3NF)
+- Primary and Foreign Keys
+- Indexing for query optimization
+- Stored Procedures and Views
 
-## How to Use
-1. Run `schema.sql` to create the database structure
-2. Load sample data (or connect to your own dataset)
-3. Execute queries from `queries.sql` for analysis
-4. Modify queries for your specific use case
+### Business Analytics Queries
+- Top 10 customers by revenue
+- Monthly and yearly sales trends
+- Product performance analysis
+- RFM Customer Segmentation (Recency, Frequency, Monetary)
+- Low inventory alerts
+- Year-over-year growth analysis
+
+## Sample Query
+
+```sql
+-- Top Customers by Revenue
+SELECT 
+    c.CustomerName,
+    COUNT(o.OrderID) AS TotalOrders,
+    SUM(od.Quantity * od.UnitPrice) AS TotalRevenue,
+    AVG(od.Quantity * od.UnitPrice) AS AvgOrderValue
+FROM Customers c
+JOIN Orders o ON c.CustomerID = o.CustomerID
+JOIN OrderDetails od ON o.OrderID = od.OrderID
+GROUP BY c.CustomerName
+ORDER BY TotalRevenue DESC
+LIMIT 10;
+```
+
+## Tools Used
+- MySQL / PostgreSQL
+- SQL Server Management Studio (SSMS)
+- DBeaver for database visualization
