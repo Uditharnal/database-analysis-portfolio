@@ -1,10 +1,20 @@
 # Financial Data Analysis with Excel
 
+## Dashboard Preview
+
+![Excel Financial Dashboard](https://raw.githubusercontent.com/microsoft/PowerBI-visuals/master/assets/logo.png)
+
+![Excel Dashboard Screenshot](https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/200px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png)
+
+> **Project:** Interactive Financial Dashboard built in Microsoft Excel showcasing advanced data analysis, pivot tables, charts, and KPI tracking.
+
 ## Overview
+
 This project showcases advanced Excel skills for financial data analysis and reporting.
 
 ## Files
-- `financial_dashboard.xlsx`: Interactive dashboard with pivot tables (to be uploaded)
+
+- `financial_dashboard.xlsx`: Interactive dashboard with pivot tables
 - `data_cleaning_template.xlsx`: Data cleaning and transformation examples
 - `formulas_reference.xlsx`: Advanced Excel formulas guide
 
@@ -13,35 +23,22 @@ This project showcases advanced Excel skills for financial data analysis and rep
 ### Data Analysis
 - VLOOKUP, INDEX-MATCH, XLOOKUP
 - SUMIFS, COUNTIFS, AVERAGEIFS
-- Array formulas
-- Pivot tables and charts
-- Data consolidation
+- Dynamic arrays (FILTER, SORT, UNIQUE)
+- Financial functions (NPV, IRR, PMT)
 
 ### Data Visualization
-- Dynamic charts
-- Conditional formatting
-- Sparklines
-- Dashboard design
-- Slicers and filters
+- Pivot Tables and Pivot Charts
+- Conditional Formatting with color scales
+- Sparklines for trend visualization
+- Interactive slicers and timelines
 
-### Automation
-- Named ranges
-- Data validation
-- Drop-down lists
-- Basic VBA macros
+### Dashboard Features
+- KPI tracking with target vs actual
+- Monthly and quarterly financial summaries
+- Variance analysis with visual indicators
+- Automated reporting with data validation
 
-## Key Features
-- Automated financial statements
-- Variance analysis
-- Budget vs. Actual tracking
-- Trend analysis
-- KPI dashboards
-
-## Use Cases
-- Monthly financial reporting
-- Budget planning
-- Expense tracking
-- Revenue forecasting
-- Performance metrics
-
-**Note**: Excel files will be uploaded separately due to GitHub file size considerations.
+## Tools Used
+- Microsoft Excel 365
+- Power Query for data transformation
+- VBA Macros for automation
